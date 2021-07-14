@@ -1,2 +1,3 @@
 # infinity-scroll
-scrolling to infinity
+
+'Infnity Scroll' program for a Udemy course taught by Andrei Neagoie and Jacinto Wong.
