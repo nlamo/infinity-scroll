@@ -1,0 +1,59 @@
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  letter-spacing: 2.5px;
+}
+
+/* Loader */
+/* NOTE: top, bottom, left, right == 0, this is a trick to make it extend over the entire page */
+.loader {
+  position: fixed; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* NOTE: specific trick for fixed centering, also seen in other CSS course */
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+/* NOTE: margin-left/right are each set as 30% of the containing block, so 60% in total */
+.image-container {
+  margin: 10px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .image-container { 
+    margin: 15px;
+  }
+}
